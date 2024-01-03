@@ -35,8 +35,8 @@ const Home = ({
           <div className="row">
             {projects.map((project, index) => (
               <Link to={project.url} className="card-project">
-                <div key={index}>
-                  <div className="card my-1 text-white bg-dark bg-gradient table-hover">
+                <div key={index} className="card my-1 text-white bg-dark bg-gradient position-relative">
+                  <div className="overlay"></div>
                     <img
                       src={project.imageSrc}
                       className="image-projects"
@@ -47,13 +47,15 @@ const Home = ({
                       <p className="card-text">{project.url}</p>
                       <p className="card-text">{project.description}</p>
                     </div>
-                  </div>
+                  
                 </div>
               </Link>
             ))}
           </div>
-          <h3>Contact Me</h3>
+          <div className="mt-3 py-3">
+          <h3 >Contact Me</h3>
           <p>{contact}</p>
+          </div>
         </div>
       </div>
     </div>
