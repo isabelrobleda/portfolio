@@ -24,3 +24,13 @@
   overflow-y: auto;
   max-height: 100vh;
 }
+
+.image-projects {
+  height: auto;
+  width: 40%;
+  object-fit: cover;
+}
+
+.card-project {
+  text-decoration: none;
+}

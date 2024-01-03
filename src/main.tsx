@@ -1,12 +1,32 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { BrowserRouter as Router } from "react-router-dom";
 import "./index.css";
 import Header from "./components/Header.tsx";
 import Home from "./components/Home.tsx";
 import 'bootstrap/dist/css/bootstrap.css';
 
+
+const projectsData = [
+  {
+    title: "Curriculum Builder",
+    description: "This application allows users to generate and save their CVs quickly and efficiently in a responsive website. Users can create a sign-up/login to their account.They can create their CV while seeing it in a preview, they can download the PDF and receive a confirmation email. They can create multiple CVs in their account.They can also delete and update them. This project gained the title of the best project in my class. Tech Stack: React JS, Node JS, Express JS and Mongo DB. For styling, it is based on Tailwind CSS.",
+    imageSrc: "src/assets/cv-builder-logo.png",
+    url: "https://curriculum-builder.netlify.app/"
+  },
+  {
+    title: "Board Games App",
+    description: "Description of Project 2",
+    imageSrc: "src/assets/board-games-app.png",
+    url: "https://curriculum-builder.netlify.app/"
+  },
+  // Add more projects as needed
+];
+
+
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
+    <Router>
     <div className="wrapper">
     <Header
       name="Isabel Robleda"
@@ -43,9 +63,10 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         "Atlassian Tools", 
         "Project Management"
       ]}
-      projects={["Curriculum Builder", "Board Games App", "Spitting Llama"]}
+      projects={projectsData}
       contact="Feel free to reach me via email or connect with me on LinkedIn."
     />
     </div>
+    </Router>
   </React.StrictMode>
 );

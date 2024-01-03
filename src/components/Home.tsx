@@ -1,8 +1,15 @@
+import { Link } from "react-router-dom";
+
 type HomeProps = {
   aboutTitle: string;
   description: string;
   skills: string[];
-  projects: string[];
+  projects: {
+    title: string;
+    url: string;
+    description: string;
+    imageSrc: string;
+  }[];
   contact: string;
 };
 const Home = ({
@@ -25,11 +32,26 @@ const Home = ({
             ))}
           </ul>
           <h3>Projects</h3>
-          <ul>
+          <div className="row">
             {projects.map((project, index) => (
-              <li key={index}>{project}</li>
+              <Link to={project.url} className="card-project">
+                <div key={index}>
+                  <div className="card my-1 text-white bg-dark bg-gradient table-hover">
+                    <img
+                      src={project.imageSrc}
+                      className="image-projects"
+                      alt={project.title}
+                    />
+                    <div className="card-body">
+                      <h5 className="card-title">{project.title}</h5>
+                      <p className="card-text">{project.url}</p>
+                      <p className="card-text">{project.description}</p>
+                    </div>
+                  </div>
+                </div>
+              </Link>
             ))}
-          </ul>
+          </div>
           <h3>Contact Me</h3>
           <p>{contact}</p>
         </div>
