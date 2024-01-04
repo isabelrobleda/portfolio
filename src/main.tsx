@@ -10,8 +10,8 @@ const projectsData = [
   {
     title: "Curriculum Builder",
     description:
-      "This application allows users to generate and save their CVs quickly and efficiently in a responsive website. Users can create a sign-up/login to their account.They can create their CV while seeing it in a preview, they can download the PDF and receive a confirmation email. They can create multiple CVs in their account.They can also delete and update them. This project gained the title of the best project in my class. Tech Stack: React JS, Node JS, Express JS and Mongo DB. For styling, it is based on Tailwind CSS.",
-    imageSrc: "src/assets/cv-builder-logo.png",
+      "This application allows users to generate and save their CVs quickly and efficiently in a responsive website. Users can create their CV while seeing it in a preview, they can download the PDF and receive a confirmation email. They can create multiple CVs. They can also delete and update them. Tech Stack: React JS, Node JS, Express JS and Mongo DB. For styling, Tailwind CSS.",
+    imageSrc: "src/assets/cv-builder.png",
     url: "https://curriculum-builder.netlify.app/",
   },
   {
@@ -38,11 +38,29 @@ const skillsData = [
   "MongoDB",
   "Express",
   "NodeJS",
+  "TypeScript",
   "Agile Methodologies",
   "REST APIs",
   "GitHub",
   "Atlassian Tools",
   "Project Management",
+  "Product Management",
+  "Scrum",
+  "Strategic Planning",
+  "Tailwind CSS", 
+  "Bootstrap",
+  "Communication Skills"
+];
+
+const contactIcons= [
+  {
+    url: "https://github.com/isabelrobleda",
+    iconSrc: "src/assets/github-icon.png"
+  },
+  {
+    url: "https://www.linkedin.com/in/isabel-robleda-17094382/",
+    iconSrc: "src/assets/linkedin-icon.png"
+  }
 ];
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
@@ -52,27 +70,26 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Header
           name="Isabel Robleda"
           position="Full Stack Developer"
-          links={[
-            "https://github.com/isabelrobleda",
-            "https://www.linkedin.com/in/isabel-robleda-17094382/",
-          ]}
+          contactLinks={contactIcons}
           summary="I am a Full Stack Developer with 6 years of experience in digital project
       management and knowledge in JavaScript, HTML5, CSS3, and MERN
       stack (MongoDB, Express JS, React JS, and Node JS). I am passionate
       about software development to improve peoples lives."
         />
         <Home
+          title={`Hi there 👋🏾! I'm Isabel`}
           aboutTitle="About Me"
-          description="Hello 👋🏾! 
+          description="
       I am a Full-Stack Developer (MERN) with a rich background of over 6 years of experience in Project and Product Management within the realm of Digital Products. 
       Holding a Bachelor's degree in International Relations from the Universidad Iberoamericana and a Master's (LLM) in Globalization and Law from Maastricht University, Netherlands, 
       I bring a unique blend of technical expertise and global perspective to my work. Driven by a passion for innovation, 
       I transitioned from managing development teams to becoming a Full-Stack Developer. 
       I started a Web Development bootcamp, equipping myself with the skills needed to create and enhance digital products with a user-centric approach. 
-      Career Objective: My goal is to leverage my diverse skill set as a Junior Web Developer to contribute to the development and enhancement of digital products, placing a strong emphasis on delivering exceptional user experiences."
+      My goal is to leverage my diverse skill set as a Web Developer to contribute to the development and enhancement of digital products, placing a strong emphasis on delivering exceptional user experiences."
           skills={skillsData}
           projects={projectsData}
-          contact="Feel free to reach me via email or connect with me on LinkedIn."
+          contact="Feel free to connect with me on LinkedIn, or take a look at my GitHub."
+          contactLinks={contactIcons}
         />
       </div>
     </Router>
