@@ -1,10 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./index.css";
 import Header from "./components/Header.tsx";
 import Home from "./components/Home.tsx";
 import "bootstrap/dist/css/bootstrap.css";
+import ContactForm from "./components/Contact.tsx";
 
 const projectsData = [
   {
@@ -47,20 +48,20 @@ const skillsData = [
   "Product Management",
   "Scrum",
   "Strategic Planning",
-  "Tailwind CSS", 
+  "Tailwind CSS",
   "Bootstrap",
-  "Communication Skills"
+  "Communication Skills",
 ];
 
-const contactIcons= [
+const contactIcons = [
   {
     url: "https://github.com/isabelrobleda",
-    iconSrc: "src/assets/github-icon.png"
+    iconSrc: "src/assets/github-icon.png",
   },
   {
     url: "https://www.linkedin.com/in/isabel-robleda-17094382/",
-    iconSrc: "src/assets/linkedin-icon.png"
-  }
+    iconSrc: "src/assets/linkedin-icon.png",
+  },
 ];
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
@@ -76,21 +77,67 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
       stack (MongoDB, Express JS, React JS, and Node JS). I am passionate
       about software development to improve peoples lives."
         />
-        <Home
-          title={`Hi there 👋🏾! I'm Isabel`}
-          aboutTitle="About Me"
-          description="
-      I am a Full-Stack Developer (MERN) with a rich background of over 6 years of experience in Project and Product Management within the realm of Digital Products. 
-      Holding a Bachelor's degree in International Relations from the Universidad Iberoamericana and a Master's (LLM) in Globalization and Law from Maastricht University, Netherlands, 
-      I bring a unique blend of technical expertise and global perspective to my work. Driven by a passion for innovation, 
-      I transitioned from managing development teams to becoming a Full-Stack Developer. 
-      I started a Web Development bootcamp, equipping myself with the skills needed to create and enhance digital products with a user-centric approach. 
-      My goal is to leverage my diverse skill set as a Web Developer to contribute to the development and enhancement of digital products, placing a strong emphasis on delivering exceptional user experiences."
-          skills={skillsData}
-          projects={projectsData}
-          contact="Feel free to connect with me on LinkedIn, or take a look at my GitHub."
-          contactLinks={contactIcons}
-        />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <Home
+                title={`👋 Hi there! I'm Isabel`}
+                subtitle={
+                  "I have more than 6 years of experience creating digital products. Based in Berlin, Germany"
+                }
+                aboutTitle="About Me"
+                description={[
+                  <p key={1}>
+                    I am a <strong>Full-Stack Developer (MERN)</strong> with a
+                    rich background of over 6 years of experience in Project and
+                    Product Management within the realm of Digital Products.
+                  </p>,
+                  <p key={2}>
+                    Holding a Bachelor's degree in{" "}
+                    <strong>International Relations</strong> from the
+                    Universidad Iberoamericana and a Master's (LLM) in{" "}
+                    <strong>Globalization and Law</strong> from Maastricht
+                    University, Netherlands, I bring a unique blend of technical
+                    expertise and global perspective to my work.
+                  </p>,
+                  <p key={3}>
+                    Driven by a passion for innovation, I transitioned from
+                    managing development teams to becoming a{" "}
+                    <strong>Full-Stack Developer</strong>.
+                  </p>,
+                  <p key={4}>
+                    I started a Web Development bootcamp, equipping myself with
+                    the skills needed to create and enhance digital products
+                    with a <strong>user-centric approach</strong>.
+                  </p>,
+                  <p key={5}>
+                    My goal is to leverage my diverse skill set as a{" "}
+                    <strong>Web Developer</strong> to contribute to the
+                    development and enhancement of digital products, placing a
+                    strong emphasis on delivering exceptional{" "}
+                    <strong>user experiences</strong>.
+                  </p>,
+                ]}
+                skills={skillsData}
+                projects={projectsData}
+                contact={`I’m always open to talk about digital products, coding or other opportunities. Do you want to send feedback? Wanna say "hi"? Let me know! Feel free to contact me via email, or let's connect on LinkedIn.`}
+              />
+            }
+          ></Route>
+          <Route
+            path="/contact"
+            element={
+              <ContactForm
+                onSubmit={(email, message) => {
+                  // Handle the form submission logic here
+                  console.log("Email:", email);
+                  console.log("Message:", message);
+                }}
+              />
+            }
+          ></Route>
+        </Routes>
       </div>
     </Router>
   </React.StrictMode>

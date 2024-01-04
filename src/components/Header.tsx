@@ -21,16 +21,16 @@ const Header = ({ name, position, contactLinks, summary }: HeaderProps) => {
       };
   
     return (
-      <div className="sticky-left px-4 px-5 pt-10 header bg-dark bg-gradient text-white col-md-3">
-        <div className="row ">
+      <div className="sticky-left px-4 px-5 pt-10 header bg-black text-white col-md-3">
+        <div className="col">
           <div className="col-12">
             <h2 className="mt-5 pt-4">{name}</h2>
-            <p className="badge rounded bg-light text-black mx-1 mb-5 px-3 py-2 ">{position}</p>
+            <p className="badge rounded bg-black text-white mx-1 mb-5 px-3 py-3 badges-skills">{position}</p>
             <br />
             
             <p className="fonts-home">{summary}</p>
             <br />  
-            <div className="flex">
+            <div className="">
               {contactLinks.map((contact, index) => (
                 <Link key={index} to={contact.url} target="_blank">
                   <img src={contact.iconSrc} className="icon-header" alt={`icon-${index}`} />
@@ -39,8 +39,8 @@ const Header = ({ name, position, contactLinks, summary }: HeaderProps) => {
             </div>
             <br /> 
           </div>
-          <div>
-            <button onClick={handleSubmit} className="btn btn-outline-light">
+          <div className="div-button">
+            <button onClick={handleSubmit} className="btn btn-outline-secondary download-button">
               Download CV
             </button>
           </div>

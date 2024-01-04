@@ -16,14 +16,18 @@
 }
 
 .header {
+  display: flex;
+  flex-direction: column;
   position: sticky;
   top: 0;
   width: max-content;
+  opacity: 89%;
 }
 
 .home {
   overflow-y: auto;
   max-height: 100vh;
+  opacity: 87%;
 }
 
 .card-project {
@@ -31,8 +35,7 @@
 }
 
 .project-card:hover {
-  transform: scale(1.02); 
-  transition: transform 0.3s ease; 
+  border: 1px solid rgb(65, 65, 64);
 }
 
 .icon{
@@ -41,6 +44,7 @@
   padding-top: 1%;
   margin-right: 5%;
   justify-content: flex-start;
+  margin-left: 5%;
 }
 
 .icon-header {
@@ -51,5 +55,36 @@
 }
 
 .fonts-home {
-  font-size: 90%
+  font-size: 85%
+}
+
+.main-title {
+  font-size:280%;
+  margin-left: 5%;
+}
+
+.subtitle { 
+  font-size: medium;
+  font-weight: 500;
+  margin-left: 5%;
+}
+
+.subtitles-home {
+  font-size: x-large;
+  font-weight: 600;
+}
+
+.badges-skills {
+  border: 1px solid white;
+}
+
+.div-button {
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-top: 80%;
+}
+
+.images-projects {
+  width: 85%;
 }
