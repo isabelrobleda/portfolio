@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { createBrowserHistory } from "history";
 
 type HomeProps = {
   title: string;
@@ -14,13 +13,6 @@ type HomeProps = {
     imageSrc: string;
   }[];
   contact: string;
-};
-
-const history = createBrowserHistory();
-
-const handleSubmit = (event: React.MouseEvent<HTMLButtonElement>) => {
-  event.preventDefault();
-  history.push("/contact"); 
 };
 
 
@@ -43,7 +35,7 @@ const Home = ({
             <h1 className="col-9 px-5 mt-4 mx-5 pt-4 font-bold main-title">
               <strong>{title}</strong>
             </h1>
-            <p className="col-8 px-5 mt-2 subtitle mb-5 mx-5">{subtitle}</p>
+            <p className="col-7 px-5 mt-2 subtitle mb-5 mx-5">{subtitle}</p>
           </div>
           <h2 className="pt-2 px-5 mt-4 pt-3 subtitles-home mx-5">
             {aboutTitle}
@@ -72,10 +64,10 @@ const Home = ({
               <Link to={project.url} target="_blank" className="card-project">
                 <div
                   key={index}
-                  className="card mb-3 text-white bg-black project-card px-3 py-3 mx-5"
+                  className="card mb-3 text-white bg-transparent project-card px-3 py-3 mx-5"
                 >
                   <div className="row g-0 d-flex align-items-center">
-                    <div className="col-md-3">
+                    <div className="col-md-3 absolute">
                       <img
                         src={project.imageSrc}
                         className="img-fluid rounded mx-2 images-projects"
@@ -97,9 +89,9 @@ const Home = ({
           </div>
           <br />
           <div className="mt-1 py-3 px-5 mb-5">
-            <h2 className="subtitles-home mx-5">Contact Me</h2>
+            <h2 className="subtitles-home mx-5">Let's get in touch!</h2>
             <p className="fonts-home mx-5">{contact}</p>
-            <button onClick={handleSubmit} className="btn btn-outline-secondary mx-5">Say Hello!</button>
+            <Link to={"/contact"}><button className="btn btn-outline-secondary mx-5">Say Hello!</button></Link>
           </div>
         </div>
       </div>

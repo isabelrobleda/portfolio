@@ -84,7 +84,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
               <Home
                 title={`👋 Hi there! I'm Isabel`}
                 subtitle={
-                  "I have more than 6 years of experience creating digital products. Based in Berlin, Germany"
+                  "+6 years of experience crafting products and doing digital magic! Based in Berlin, Germany."
                 }
                 aboutTitle="About Me"
                 description={[
@@ -121,20 +121,15 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
                 ]}
                 skills={skillsData}
                 projects={projectsData}
-                contact={`I’m always open to talk about digital products, coding or other opportunities. Do you want to send feedback? Wanna say "hi"? Let me know! Feel free to contact me via email, or let's connect on LinkedIn.`}
+                contact={` Do you want to send feedback? Wanna say "hi"? Let me
+                know!`}
               />
             }
           ></Route>
           <Route
             path="/contact"
             element={
-              <ContactForm
-                onSubmit={(email, message) => {
-                  // Handle the form submission logic here
-                  console.log("Email:", email);
-                  console.log("Message:", message);
-                }}
-              />
+              <ContactForm/>
             }
           ></Route>
         </Routes>

@@ -21,22 +21,41 @@
   position: sticky;
   top: 0;
   width: max-content;
-  opacity: 89%;
+  opacity: 87%;
+  height: 100vh;
 }
 
 .home {
   overflow-y: auto;
   max-height: 100vh;
-  opacity: 87%;
+  opacity: 89%;
 }
 
 .card-project {
   text-decoration: none;
 }
 
+.project-card {
+  overflow: hidden;
+  position: relative;
+}
+
+
 .project-card:hover {
   border: 1px solid rgb(65, 65, 64);
+  background-color: rgb(29, 28, 28); 
+  transition: background-color 0.3s ease; 
 }
+
+.images-projects {
+  width: 85%;
+  display: block;
+}
+
+.project-card:hover img {
+  transform: scale(1.02); 
+}
+
 
 .icon{
   height: auto;
@@ -52,7 +71,20 @@
   margin-right: 10%;
   padding-top: 1%;
   margin-bottom: 7%;
+  opacity: 55%;
 }
+
+.icon-header:hover {
+  opacity: 80%;
+}
+
+.icon-home {
+  width: 1.5vw;
+  opacity: 75%;
+  padding-right: 8%;
+  margin-bottom: 5%;
+}
+
 
 .fonts-home {
   font-size: 85%
@@ -75,16 +107,30 @@
 }
 
 .badges-skills {
-  border: 1px solid white;
+  border: 1px solid rgb(81, 80, 80);
+  background-color: rgb(7, 7, 7);
 }
+
 
 .div-button {
   display:flex;
   flex-direction: column;
   justify-content: flex-end;
-  margin-top: 80%;
+  margin-top: 18%;
 }
 
-.images-projects {
-  width: 85%;
+
+.contact-form {
+    overflow-y: auto;
+    max-height: 100vh;
+    opacity: 89%;
+    max-width: 100vw;
+}
+
+.photo-irsg{
+  width: 8vw;
+}
+
+.download-button {
+  opacity: 85%;
 }

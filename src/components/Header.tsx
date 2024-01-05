@@ -19,13 +19,15 @@ const Header = ({ name, position, contactLinks, summary }: HeaderProps) => {
         event.preventDefault();
         window.open("src/assets/IsabelRobledaResume.pdf", "_blank");
       };
-  
+
     return (
       <div className="sticky-left px-4 px-5 pt-10 header bg-black text-white col-md-3">
         <div className="col">
           <div className="col-12">
-            <h2 className="mt-5 pt-4">{name}</h2>
-            <p className="badge rounded bg-black text-white mx-1 mb-5 px-3 py-3 badges-skills">{position}</p>
+            <br />
+            <img src={"src/assets/photo_irsg B&W.png"} className="photo-irsg mt-5" />
+            <h2 className="mt-2 pt-4">{name}</h2>
+            <p className="mx-1 mb-5 large">{position}</p>
             <br />
             
             <p className="fonts-home">{summary}</p>
@@ -40,7 +42,7 @@ const Header = ({ name, position, contactLinks, summary }: HeaderProps) => {
             <br /> 
           </div>
           <div className="div-button">
-            <button onClick={handleSubmit} className="btn btn-outline-secondary download-button">
+            <button onClick={handleSubmit} className="btn btn-outline-secondary text-light download-button">
               Download CV
             </button>
           </div>
