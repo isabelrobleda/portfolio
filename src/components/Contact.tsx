@@ -39,7 +39,7 @@ const ContactForm: React.FC<ContactFormProps> = () => {
   };
 
   return (
-    <section className="px-5 pt-3 pb-4 contact-form bg-black text-light col">
+    <section className="px-md-5 pt-3 pb-4 contact-form bg-black text-light col">
         {submissionStatus === "success" && (
         <div className="alert alert-success text-center" role="alert">
           Form submitted successfully!

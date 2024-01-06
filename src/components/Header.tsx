@@ -21,13 +21,13 @@ const Header = ({ name, position, contactLinks, summary }: HeaderProps) => {
       };
 
     return (
-      <div className="sticky-left px-4 px-5 pt-10 header bg-black text-white col-md-3">
+      <div className="px-5 pt-10 header bg-black text-white col-md-3">
         <div className="col">
           <div className="col-12">
             <br />
-            <img src={"src/assets/photo_irsg B&W.png"} className="photo-irsg mt-5" />
+            <img src={"src/assets/photo_irsg.png"} className="photo-irsg mt-5" />
             <h2 className="mt-2 pt-4">{name}</h2>
-            <p className="mx-1 mb-5 large">{position}</p>
+            <p className="mx-md-1 mb-5">{position}</p>
             <br />
             
             <p className="fonts-home">{summary}</p>
