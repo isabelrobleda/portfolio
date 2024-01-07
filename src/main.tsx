@@ -6,33 +6,33 @@ import Header from "./components/Header.tsx";
 import Home from "./components/Home.tsx";
 import "bootstrap/dist/css/bootstrap.css";
 import ContactForm from "./components/Contact.tsx";
-import CVBuilder from "./assets/cv-builder.png?url"
-import boardGames from "./assets/board-games-app.png?url"
-import spittingLlama from "./assets/spitting-llama.png?url"
+import CVBuilder from "./assets/cv-builder.png"
+import boardGames from "./assets/board-games-app.png"
+import spittingLlama from "./assets/spitting-llama.png"
 
 const projectsData = [
   {
     title: "Curriculum Builder",
     description:
       "This application allows users to generate and download their CVs. Users can create their CV while seeing it in a preview, they can download the PDF and receive a confirmation email. They can create multiple CVs. They can also delete and update them.",
-    imageSrc: "src/assets/cv-builder.png",
-    url: {CVBuilder},
+    imageSrc: CVBuilder,
+    url: "https://curriculum-builder.netlify.app/",
     techStack: ["React JS", "Node JS", "Express JS","Mongo DB", "Tailwind CSS"]
   },
   {
     title: "Board Games App",
     description:
       "Single Page Application for board games fanatics. Users perform actions such as editing, deleting, and adding new games. Includes features like picking a random game, throwing a virtual dice, and conducting personalized tests to find the best-suited game.",
-    imageSrc: "src/assets/board-games-app.png",
-    url: {boardGames},
+    imageSrc: boardGames,
+    url: "https://board-games-project.netlify.app/",
     techStack: ["React JS",  "Tailwind CSS", "DaisyUI", "JavaScript", "HTML" ]
   },
   {
     title: "Spitting Llama Videogame",
     description:
       "In this game, players assume the role of a llama that automatically spits at appearing and disappearing targets. The project demonstrates my technical prowess in leveraging core web technologies to create an interactive and entertaining gaming experience.",
-    imageSrc: "src/assets/spitting-llama.png",
-    url: {spittingLlama},
+    imageSrc: spittingLlama,
+    url: "https://isabelrobleda.github.io/project1-game/",
     techStack: ["JavaScript", "HTML", "CSS", "DOM Manipulation" ]
   },
 ];
