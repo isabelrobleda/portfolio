@@ -8,7 +8,7 @@ type HomeProps = {
   skills: string[];
   projects: {
     title: string;
-    url: string;
+    url: {};
     description: string;
     imageSrc: string;
     techStack: string[];
