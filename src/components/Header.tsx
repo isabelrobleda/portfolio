@@ -1,5 +1,7 @@
 import "bootstrap/dist/css/bootstrap.css";
 import { Link } from "react-router-dom";
+import photoIR from "../assets/photo_irsg.png"
+import cvIR from "../assets/IsabelRobledaResume.pdf"
 
 
 type HeaderProps = {
@@ -17,7 +19,7 @@ const Header = ({ name, position, contactLinks, summary }: HeaderProps) => {
      
     const handleSubmit = (event: React.MouseEvent<HTMLButtonElement>) => {
         event.preventDefault();
-        window.open("src/assets/IsabelRobledaResume.pdf", "_blank");
+        window.open(cvIR, "_blank");
       };
 
     return (
@@ -25,7 +27,7 @@ const Header = ({ name, position, contactLinks, summary }: HeaderProps) => {
         <div className="col">
           <div className="col-12">
             <br />
-            <img src={"src/assets/photo_irsg.png"} className="photo-irsg mt-5" />
+            <img src={photoIR} className="photo-irsg mt-5" />
             <h2 className="mt-2 pt-4">{name}</h2>
             <p className="mx-md-1 mb-5">{position}</p>
             <br />

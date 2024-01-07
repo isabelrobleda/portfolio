@@ -9,6 +9,8 @@ import ContactForm from "./components/Contact.tsx";
 import CVBuilder from "./assets/cv-builder.png"
 import boardGames from "./assets/board-games-app.png"
 import spittingLlama from "./assets/spitting-llama.png"
+import iconGithub from "./assets/github-icon.png"
+import iconLinkedin from "./assets/linkedin-icon.png"
 
 const projectsData = [
   {
@@ -62,11 +64,11 @@ const skillsData = [
 const contactIcons = [
   {
     url: "https://github.com/isabelrobleda",
-    iconSrc: "src/assets/github-icon.png",
+    iconSrc: iconGithub,
   },
   {
     url: "https://www.linkedin.com/in/isabel-robleda-17094382/",
-    iconSrc: "src/assets/linkedin-icon.png",
+    iconSrc: iconLinkedin,
   },
 ];
 
