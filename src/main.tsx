@@ -6,6 +6,7 @@ import Header from "./components/Header.tsx";
 import Home from "./components/Home.tsx";
 import "bootstrap/dist/css/bootstrap.css";
 import ContactForm from "./components/Contact.tsx";
+import CVBuilder from "./assets/cv-builder.png"
 
 const projectsData = [
   {
@@ -13,7 +14,7 @@ const projectsData = [
     description:
       "This application allows users to generate and download their CVs. Users can create their CV while seeing it in a preview, they can download the PDF and receive a confirmation email. They can create multiple CVs. They can also delete and update them.",
     imageSrc: "src/assets/cv-builder.png",
-    url: "https://curriculum-builder.netlify.app/",
+    url: {CVBuilder},
     techStack: ["React JS", "Node JS", "Express JS","Mongo DB", "Tailwind CSS"]
   },
   {
