@@ -25,7 +25,7 @@ const Home = ({
   projects,
   contact,
 }: HomeProps) => (
-  <div className="scrollable-md-content px-md-5 pt-3 pb-4 home bg-black text-light">
+  <div className=" px-md-5 pt-3 pb-4 home bg-black text-light">
     <div className="row">
       <div className="col">
         <div className="">

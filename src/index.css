@@ -17,8 +17,8 @@
   @media (max-width: 768px) { 
     display: flex;
     flex-direction: column-reverse;
-   
     z-index: 0;
+    position: relative;
    }
   
 }
@@ -34,7 +34,7 @@
   border-right: 1px solid rgba(90, 90, 90, 0.1);
 
   @media (max-width: 768px) { 
-  
+    position: static;
     bottom: 0;
     width: 100%;
     opacity: 95%;
