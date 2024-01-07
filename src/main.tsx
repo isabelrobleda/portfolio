@@ -6,9 +6,9 @@ import Header from "./components/Header.tsx";
 import Home from "./components/Home.tsx";
 import "bootstrap/dist/css/bootstrap.css";
 import ContactForm from "./components/Contact.tsx";
-import CVBuilder from "./assets/cv-builder.png"
-import boardGames from "./assets/board-games-app.png"
-import spittingLlama from "./assets/spitting-llama.png"
+import CVBuilder from "./assets/cv-builder.png?url"
+import boardGames from "./assets/board-games-app.png?url"
+import spittingLlama from "./assets/spitting-llama.png?url"
 
 const projectsData = [
   {
