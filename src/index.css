@@ -17,6 +17,8 @@
   @media (max-width: 768px) { 
     display: flex;
     flex-direction: column-reverse;
+    position: relative;
+    z-index: 0;
    }
   
 }
@@ -32,13 +34,14 @@
   border-right: 1px solid rgba(90, 90, 90, 0.1);
 
   @media (max-width: 768px) { 
-    position: static;
+    position: sticky;
     bottom: 0;
-    width: auto;
+    width: 100%;
     opacity: 87%;
     height: max-content;
     border-right: 1px solid rgba(90, 90, 90, 0.1);
     padding-bottom: 10%;
+    z-index: unset;
    }
 }
 
@@ -52,7 +55,7 @@
     width: auto;
     opacity: 89%;
     height: max-content;
-    overflow-y: auto;
+    z-index: 1;
    }
 }
 
