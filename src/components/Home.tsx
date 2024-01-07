@@ -62,7 +62,7 @@ const Home = ({
               <Link to={project.url} target="_blank" className="card-project">
                 <div
                   key={index}
-                  className="card mb-3 text-white bg-transparent project-card px-3 py-3 mx-md-5 mx-3"
+                  className="card mb-3 text-white bg-transparent project-card py-3 mx-md-5 mx-3"
                 >
                   <div className="g-0 d-md-flex align-items-center">
                     <div className="col-md-3 absolute">

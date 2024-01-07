@@ -56,13 +56,13 @@ const ContactForm: React.FC<ContactFormProps> = () => {
                 Home</button>
             </Link>
       <h1 className="mt-5 py-2 px-5 mb-1">Let's get in touch!</h1>
-      <p className="mt-1 py-2 px-5 mb-1">
+      <p className="mt-1 py-2 px-5 mb-1 col-lg-7">
         I’m always open to talk about digital products, coding, or other
         opportunities. Do you want to send feedback? Wanna say "hi"? Let me
         know! Feel free to contact me 🤓
       </p>
       <form onSubmit={handleSubmit}>
-        <div className="form-group mt-1 py-2 px-5 mb-1">
+        <div className="form-group mt-1 py-2 px-5 mb-1 col-lg-7" >
           <label htmlFor="InputEmail" className="fonts-home">
             Email Address
           </label>
@@ -74,7 +74,7 @@ const ContactForm: React.FC<ContactFormProps> = () => {
             required
           />
         </div>
-        <div className="form-group py-1 px-5 mb-3">
+        <div className="form-group py-1 px-5 mb-3 col-lg-7">
           <label htmlFor="ControlTextarea" className="fonts-home">
             Your Message
           </label>

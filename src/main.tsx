@@ -30,7 +30,7 @@ const projectsData = [
       "In this game, players assume the role of a llama that automatically spits at appearing and disappearing targets. The project demonstrates my technical prowess in leveraging core web technologies to create an interactive and entertaining gaming experience.",
     imageSrc: "src/assets/spitting-llama.png",
     url: "https://isabelrobleda.github.io/project1-game/",
-    techStack: ["JavaScript", "HTML", "CSS", "DOM Manipulatino" ]
+    techStack: ["JavaScript", "HTML", "CSS", "DOM Manipulation" ]
   },
 ];
 
