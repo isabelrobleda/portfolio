@@ -80,6 +80,8 @@
   @media (max-width: 768px) { 
     width: 85%;
     height: auto;
+    padding-left: 0;
+    margin-left: 0;
    }
 }
 
