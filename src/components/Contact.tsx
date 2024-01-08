@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import homeIcon from "src/assets/—Pngtree—white house building cartoon_4724234.png"
+import homeIcon from "../assets/—Pngtree—white house building cartoon_4724234.png"
 
 type ContactFormProps = {
   // onSubmit: (email: string, message: string) => void;
