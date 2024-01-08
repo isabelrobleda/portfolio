@@ -53,6 +53,7 @@
   @media (max-width: 768px) { 
     opacity: 0.99; 
     position:static;  
+    display: block;
    }
 }
 
