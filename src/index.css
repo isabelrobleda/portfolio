@@ -6,9 +6,12 @@
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -webkit-overflow-scrolling: touch;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+body {
+  scroll-behavior: smooth;
 }
 
 
@@ -16,9 +19,8 @@
   display: flex;
 
   @media (max-width: 768px) { 
-    display: flex;
     flex-direction: column-reverse;
-    overflow-y:auto;
+    overflow-y: auto;
     overflow-x: hidden;
    }
   
@@ -36,7 +38,7 @@
 
   @media (max-width: 768px) { 
     width: 100%;
-    opacity: 95%;
+    opacity: 0.95;
     height: max-content;
     border-top: 1px solid rgba(90, 90, 90, 0.1);
     padding-bottom: 10%;
@@ -51,7 +53,7 @@
 
   @media (max-width: 768px) { 
 
-    opacity: 99%;
+    opacity: 0.99; 
     overflow-y: auto;
    }
 }
