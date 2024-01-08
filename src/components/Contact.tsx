@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import homeIcon from "src/assets/—Pngtree—white house building cartoon_4724234.png"
 
 type ContactFormProps = {
   // onSubmit: (email: string, message: string) => void;
@@ -52,7 +53,7 @@ const ContactForm: React.FC<ContactFormProps> = () => {
       )}
       <Link to={"/"}>
               <button className="btn btn-outline-secondary mt-3 mx-5 text-light">
-                <img src={"src/assets/—Pngtree—white house building cartoon_4724234.png"} className="icon-home" alt="" />
+                <img src={homeIcon} className="icon-home" alt="" />
                 Home</button>
             </Link>
       <h1 className="mt-5 py-2 px-5 mb-1">Let's get in touch!</h1>
