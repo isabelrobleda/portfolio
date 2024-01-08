@@ -19,7 +19,7 @@ body {
   display: flex;
 
   @media (max-width: 768px) { 
-    flex-direction: column-reverse;
+    flex-direction: column;
     overflow-y: scroll;
     overflow-x: hidden;
     position: relative;
