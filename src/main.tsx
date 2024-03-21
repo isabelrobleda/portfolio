@@ -11,6 +11,7 @@ import boardGames from "./assets/board-games-app.png"
 import spittingLlama from "./assets/spitting-llama.png"
 import iconGithub from "./assets/github-icon.png"
 import iconLinkedin from "./assets/linkedin-icon.png"
+import todoListVue from "./assets/todo-list-vue.png"
 
 const projectsData = [
   {
@@ -28,6 +29,13 @@ const projectsData = [
     imageSrc: boardGames,
     url: "https://board-games-project.netlify.app/",
     techStack: ["React JS",  "Tailwind CSS", "DaisyUI", "JavaScript", "HTML" ]
+  },
+  {
+    title: "To-Do List",
+    description: "In this project, I created a simple to-do list using Vue Js. The user can add, delete, and mark tasks as completed. The project demonstrates my ability to create a simple and functional application using Vue.",
+    imageSrc: todoListVue,
+    url: "https://main--todo-list-vuejs-project.netlify.app/",
+    techStack: ["Vue JS", "JavaScript", "HTML", "SCSS" ]
   },
   {
     title: "Spitting Llama Videogame",
@@ -59,6 +67,11 @@ const skillsData = [
   "Tailwind CSS",
   "Bootstrap",
   "Communication Skills",
+  "Problem-Solving",
+  "Pair Programming", 
+  "Vue JS",
+  "DaisyUI",
+  "Next JS",
 ];
 
 const contactIcons = [
