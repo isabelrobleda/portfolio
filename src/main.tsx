@@ -12,6 +12,7 @@ import spittingLlama from "./assets/spitting-llama.png"
 import iconGithub from "./assets/github-icon.png"
 import iconLinkedin from "./assets/linkedin-icon.png"
 import todoListVue from "./assets/todo-list-vue.png"
+import upcycle from "./assets/upcycle-project.png"
 
 const projectsData = [
   {
@@ -21,6 +22,14 @@ const projectsData = [
     imageSrc: CVBuilder,
     url: "https://curriculum-builder.netlify.app/",
     techStack: ["React JS", "Node JS", "Express JS","Mongo DB", "Tailwind CSS"]
+  },
+  {
+    title: "Upcycle E-Commerce",
+    description:
+      "This project is an e-commerce platform for re-used furniture. Users can browse products, add them to the cart, and proceed to checkout. Vendor can send their products through a form with complex form specifications. The project demonstrates my ability to create a fully functional e-commerce platform using the MERN stack.",
+    imageSrc: upcycle,
+    url: "https://upcyclemex.com/",
+    techStack: ["React JS",  "Tailwind CSS", "Heroku", "JavaScript", "HTML", "MongoDB", "NodeJS", "Shopify" ]
   },
   {
     title: "Board Games App",
