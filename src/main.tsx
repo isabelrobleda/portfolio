@@ -13,6 +13,7 @@ import iconGithub from "./assets/github-icon.png"
 import iconLinkedin from "./assets/linkedin-icon.png"
 import todoListVue from "./assets/todo-list-vue.png"
 import upcycle from "./assets/upcycle-project.png"
+import MyWallet from "./assets/MyWallet.png"
 
 const projectsData = [
   {
@@ -30,6 +31,14 @@ const projectsData = [
     imageSrc: upcycle,
     url: "https://upcyclemex.com/",
     techStack: ["React JS",  "Tailwind CSS", "Heroku", "JavaScript", "HTML", "MongoDB", "NodeJS", "Shopify" ]
+  },
+  {
+    title: "My Wallet",
+    description:
+      "This project is a personal finance management application. Users can add, delete, and update expenses and categories. They can also see a their expenses in two report pages. The project demonstrates my ability to create a fully functional application using the MERN stack.",
+    imageSrc: MyWallet,
+    url: "https://my-wallet-01.netlify.app/",
+    techStack: ["React JS", "Node JS", "Express JS","Mongo DB", "Tailwind CSS"]
   },
   {
     title: "Board Games App",
