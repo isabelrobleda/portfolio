@@ -14,14 +14,15 @@ import iconLinkedin from "./assets/linkedin-icon.png"
 import todoListVue from "./assets/todo-list-vue.png"
 import upcycle from "./assets/upcycle-project.png"
 import MyWallet from "./assets/MyWallet.png"
+import ColegioSenda from "./assets/colegioSenda.png"
 
 const projectsData = [
   {
-    title: "Curriculum Builder",
+    title: "Colegio Senda",
     description:
-      "This application allows users to generate and download their CVs. Users can create their CV while seeing it in a preview, they can download the PDF and receive a confirmation email. They can create multiple CVs. They can also delete and update them.",
-    imageSrc: CVBuilder,
-    url: "https://curriculum-builder.netlify.app/",
+      "This project is a website for a school in Mexico. It includes a blog, a an application form, and a various links to different info. The project demonstrates my ability to create a fully functional website using the MERN stack.",
+    imageSrc: ColegioSenda,
+    url: "https://colegiosenda.edu.mx/",
     techStack: ["React JS", "Node JS", "Express JS","Mongo DB", "Tailwind CSS"]
   },
   {
@@ -32,6 +33,15 @@ const projectsData = [
     url: "https://upcyclemex.com/",
     techStack: ["React JS",  "Tailwind CSS", "Heroku", "JavaScript", "HTML", "MongoDB", "NodeJS", "Shopify" ]
   },
+  {
+    title: "Curriculum Builder",
+    description:
+      "This application allows users to generate and download their CVs. Users can create their CV while seeing it in a preview, they can download the PDF and receive a confirmation email. They can create multiple CVs. They can also delete and update them.",
+    imageSrc: CVBuilder,
+    url: "https://curriculum-builder.netlify.app/",
+    techStack: ["React JS", "Node JS", "Express JS","Mongo DB", "Tailwind CSS"]
+  },
+  
   {
     title: "My Wallet",
     description:
